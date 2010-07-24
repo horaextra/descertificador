@@ -1,0 +1,60 @@
+body {
+  background-color: #78ADBE;
+  font: .625em Times, serif;
+}
+
+#certificate {
+  position: absolute;
+  top: 50%;
+  margin-top: -297px;
+  left : 50%;
+  margin-left: -421px;
+  width: 842px;
+  height: 594px;
+  border: 4px solid #1E706E;
+  background-color: #fff;
+  padding: 20px;
+  font-size: 1.4em;
+  color: #061615;
+}
+
+#certificate #content {
+  border: 30px solid #1E706E;
+  width: 782px;
+  height: 534px;
+  text-align: center;
+}
+
+#certificate #content p {
+  margin: 1em;
+  line-height: 1em;
+  font-size: 1.4em;
+}
+
+#certificate #content .complement {
+  font-style: italic;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+#certificate #content h1 {
+  font-size: 2.6em;
+}
+
+#certificate #content h2 {
+  margin: 0;
+  font-size: 3.8em;
+  color: #3D819F;
+}
+
+#certificate #content #date {
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+#certificate #content #signature {
+  margin: 60px;
+  padding: 10px;
+  border-top: 1px solid #061615;
+}
