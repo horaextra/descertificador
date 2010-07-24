@@ -81,7 +81,7 @@ Header
 	border: none;
 }
 #header h1 a strong {
-	color: 	#D1E751;
+	color: 	#78ADBE;
 
 }
 
@@ -128,13 +128,15 @@ Forms
 */
 
 form {
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 0;
+  width: 440px;
 }
 
 fieldset {
   margin: 0;
   padding: 20px;
+  border: none;
 }
 
 form div {
@@ -177,12 +179,14 @@ form p em {
 .button {
   width: 200px;
   text-align: center;
+  margin: 4px;
   padding: 4px;
   font-size: 1.1em;
   background-color: #031634;
   color: #fff;
   border: none;
   text-shadow: -1px -1px 0 #000;
+  float: right;
 }
 
 /*

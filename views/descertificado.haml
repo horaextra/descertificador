@@ -1,0 +1,40 @@
+- require 'cgi'
+- meses = { 1 => 'Janeiro', 2 => 'Fevereiro', 3 => 'Março', 4 => 'Abril', 5 => 'Maio', 6 => 'Junho', 7 => 'Julho', 8 => 'Agosto', 9 => 'Setembro', 10 => 'Outubro', 11 => 'Novembro', 12 => 'Dezembro'}
+<!doctype html>
+%html
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %meta{ :name => "description", :content => "" }
+    %meta{ :name => "keywords", :content => "" }
+    %meta{ :content => "en-US", "http-equiv" => "content-Language" }
+
+    %link{ :href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon" }
+    %title
+      descertificador
+    %link{ :href => "/css/descertificado.css", :rel => "stylesheet", :type => "text/css", :media => "screen" }
+
+  %body
+    #certificate
+      #content
+        %div.complement
+          descertificado de
+        %h1
+          - params[:certificados] = params[:certificados][0,70] if params[:certificados].length > 70
+          = params[:certificados]
+          
+        %div.complement
+          concedido a
+    
+        %h2
+          - params[:nome] = params[:nome][0,25] if params[:nome].length > 25
+          = params[:nome]
+    
+        %p
+          Por desempenho excepcional e contribuição permanente à comunidade XGH
+    
+        %p#date
+          Gambiarralândia, 
+          = Date.today.strftime("%d de #{meses[Date.today.month]} de %Y")
+    
+        %div#signature
+          =params[:nome]

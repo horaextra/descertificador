@@ -26,15 +26,16 @@
             = "<strong>des</strong>certicador"
       %hr
       #content
-        %dl#horoscopo.clearfix
-          %form{ :method => 'get' , :action => 'descertificado'}
+        %form{ :method => 'get' , :action => 'descertificado'}
+          %fieldset
             %label
               Nome
-            %input{ :type => "text", :name => "nome"}
+              %input{ :type => "text", :name => "nome"}
+            %br
             %label
               Certificados
-            %input{ :type => "text", :name => "certificados"}
-            %input{ :type => "submit", :name => "Descertificar"}
+              %input{ :type => "text", :name => "certificados"}
+            %input{ :type => "submit", :value => "descertificar", :class => "button" }
 
       %hr
       #footer
