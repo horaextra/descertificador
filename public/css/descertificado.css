@@ -58,3 +58,12 @@ body {
   padding: 10px;
   border-top: 1px solid #061615;
 }
+
+@media print {
+  #certificate {
+    position: relative;
+    top: auto;
+    margin: 0;
+    left : auto;
+  }
+}
