@@ -5,7 +5,6 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
     %meta{ :name => "description", :content => "" }
     %meta{ :name => "keywords", :content => "" }
-    %meta{ :content => "en-US", "http-equiv" => "content-Language" }
     %meta{ :content => "width=device-width, initial-scale = 1.0, user-scalable=yes", "name" => "viewport" }
 
     %link{ :href => "favicon.ico", :rel => "shortcut icon", :type => "image/x-icon" }
@@ -29,13 +28,13 @@
         %form{ :method => 'get' , :action => 'descertificado'}
           %fieldset
             %label
-              Nome
+              = t.index.nome
               %input{ :type => "text", :name => "nome", :maxlength => "200" }
             %br
             %label
-              Certificados
+              = t.index.certificacoes
               %input{ :type => "text", :name => "certificados", :maxlength => "200" }
-            %input{ :type => "submit", :value => "descertificar", :class => "button" }
+            %input{ :type => "submit", :value => "#{t.index.descertificar}", :class => "button" }
 
       %hr
       #footer
@@ -43,6 +42,6 @@
           &copy; 2010.
           %a{ :href => "/", :rel => "license" }
             descertificador
-          , coisa nenhuma reserved.
+          = ", #{t.index.nada} reserved"
       %script{ :src => "/javascripts/analytics-one.js"}
 

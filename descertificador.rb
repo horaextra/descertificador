@@ -2,15 +2,23 @@ require 'rubygems'
 gem 'haml'
 gem 'rcov'
 gem 'sinatra'
+gem 'sinatra-r18n'
 
 require 'yaml'
 require 'haml'
 require 'rcov'
+
 require 'sinatra'
+require 'sinatra/r18n'
 
 require 'models/meses'
 
 configure :production do
+  set :default_locale, 'pt-br'
+end
+
+configure :development do
+  set :default_locale, 'pt-br'
 end
 
 get '/' do

@@ -32,5 +32,17 @@ describe "descertificador" do
     end
 
   end
+
+  describe "I18n" do
+    it "should translate to 'pt-BR' by default" do
+      get "/"
+      last_response.body.include? "Certificações"
+    end
+
+    it "should translate 'Certificações' to 'Name' with locale 'en'" do
+      get "/"
+      last_response.body.include? "Certifications"
+    end
+  end
 end
 
